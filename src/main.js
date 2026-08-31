@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Simple Booking Submission handler
+  // Booking Submission handler
   const bookingForm = document.getElementById('booking-form');
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
@@ -52,15 +52,58 @@ document.addEventListener('DOMContentLoaded', () => {
       const department = document.getElementById('booking-department').value;
       const name = document.getElementById('booking-name').value;
       const phone = document.getElementById('booking-phone').value;
+      const email = document.getElementById('booking-email').value;
       const date = document.getElementById('booking-date').value;
 
-      if (!name || !phone || !date) {
-        alert('Please fill in your name, phone number, and preferred date.');
+      if (!name || !phone || !email || !date) {
+        alert('Please fill in all required fields.');
         return;
       }
 
-      alert(`Thank you, ${name}. Your appointment request for ${date} with ${doctor} (${department}) has been submitted. Our team will call you at ${phone} to confirm.`);
-      bookingForm.reset();
+      const submitBtn = bookingForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+      submitBtn.textContent = 'Submitting Request...';
+      submitBtn.disabled = true;
+
+      const messageContent = `Appointment Request Details:
+- Selected Department: ${department}
+- Selected Specialist: ${doctor}
+- Patient Gender: ${gender}
+- Preferred Appointment Date: ${date}
+- Contact Phone: ${phone}
+- Patient Email: ${email}`;
+
+      fetch('https://bloggfeature.certifyied.workers.dev/adminApiBlog/api/contact?projectId=4d6b3045-f228-4ed2-b400-6496d0095dcd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          sender_name: name,
+          sender_email: email,
+          phone_number: phone,
+          subject: `Dental Hub Appointment - ${name}`,
+          message: messageContent
+        })
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to submit');
+        }
+        return response.json();
+      })
+      .then(data => {
+        alert(`Thank you, ${name}. Your appointment request for ${date} has been submitted successfully. Our team will contact you soon.`);
+        bookingForm.reset();
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('There was a problem submitting your request. Please try again or call us directly.');
+      })
+      .finally(() => {
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+      });
     });
   }
 
