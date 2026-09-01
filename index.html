@@ -28,7 +28,7 @@
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Local Business Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -73,41 +73,45 @@
   }
   </script>
 </head>
-<body class="bg-brand-beige text-brand-dark min-h-screen flex flex-col font-sans">
+<body class="bg-[#f8fafc] text-slate-900 min-h-screen flex flex-col font-sans selection:bg-cyan-500 selection:text-white">
 
   <!-- Top Announcement Bar -->
-  <div class="bg-brand-dark text-brand-sand text-xs py-2 px-4 text-center tracking-wider font-medium">
-    Start smiling confidently. Book your personalized consult with Alappuzha's top specialists today.
+  <div class="bg-[#07172b] text-slate-300 text-xs py-2.5 px-4 text-center tracking-wider font-medium border-b border-cyan-900/40">
+    <span class="text-cyan-400 font-semibold uppercase mr-2 tracking-widest">✦ Alappuzha's Premier Multi-Specialty Clinic</span>
+    <span>Book your consultation with certified MDS specialists: <a href="tel:+919497105261" class="text-white hover:text-cyan-300 font-semibold underline underline-offset-2 ml-1">+91 94971 05261</a></span>
   </div>
 
   <!-- Header & Navigation -->
-  <header class="sticky top-0 z-50 bg-brand-beige/95 backdrop-blur-md border-b border-brand-almond transition-all duration-300">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300 shadow-sm">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#home" class="flex items-center gap-3">
-        <img src="/images/image5.png" alt="Dental Hub Logo" class="h-10 w-auto object-contain brightness-95 contrast-125">
-        <span class="text-xl font-bold tracking-tight text-brand-dark">Dental Hub</span>
+      <a href="#home" class="flex items-center gap-3 group">
+        <img src="/images/image5.png" alt="Dental Hub Logo" class="h-11 w-auto object-contain transition-transform group-hover:scale-105">
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight text-[#0c2340]">Dental Hub</span>
+          <span class="text-[10px] uppercase tracking-widest text-[#1da3c8] font-bold -mt-1">Specialty Dental Clinic</span>
+        </div>
       </a>
 
       <!-- Desktop Nav Links -->
       <nav class="hidden md:flex items-center gap-8">
-        <a href="#home" class="nav-link text-sm font-medium tracking-wide text-brand-muted hover:text-brand-accent transition-colors py-2 border-b-2 border-transparent">Home</a>
-        <a href="#about" class="nav-link text-sm font-medium tracking-wide text-brand-muted hover:text-brand-accent transition-colors py-2 border-b-2 border-transparent">About Us</a>
-        <a href="#services" class="nav-link text-sm font-medium tracking-wide text-brand-muted hover:text-brand-accent transition-colors py-2 border-b-2 border-transparent">Services</a>
-        <a href="#doctors" class="nav-link text-sm font-medium tracking-wide text-brand-muted hover:text-brand-accent transition-colors py-2 border-b-2 border-transparent">Doctors</a>
-        <a href="#gallery" class="nav-link text-sm font-medium tracking-wide text-brand-muted hover:text-brand-accent transition-colors py-2 border-b-2 border-transparent">Gallery</a>
-        <a href="#contact" class="nav-link text-sm font-medium tracking-wide text-brand-muted hover:text-brand-accent transition-colors py-2 border-b-2 border-transparent">Contact</a>
+        <a href="#home" class="nav-link text-sm font-semibold tracking-wide text-slate-600 hover:text-[#1da3c8] transition-colors py-2 border-b-2 border-transparent">Home</a>
+        <a href="#about" class="nav-link text-sm font-semibold tracking-wide text-slate-600 hover:text-[#1da3c8] transition-colors py-2 border-b-2 border-transparent">About Us</a>
+        <a href="#services" class="nav-link text-sm font-semibold tracking-wide text-slate-600 hover:text-[#1da3c8] transition-colors py-2 border-b-2 border-transparent">Services</a>
+        <a href="#doctors" class="nav-link text-sm font-semibold tracking-wide text-slate-600 hover:text-[#1da3c8] transition-colors py-2 border-b-2 border-transparent">Doctors</a>
+        <a href="#gallery" class="nav-link text-sm font-semibold tracking-wide text-slate-600 hover:text-[#1da3c8] transition-colors py-2 border-b-2 border-transparent">Gallery</a>
+        <a href="#contact" class="nav-link text-sm font-semibold tracking-wide text-slate-600 hover:text-[#1da3c8] transition-colors py-2 border-b-2 border-transparent">Contact</a>
       </nav>
 
       <!-- Action Button -->
       <div class="hidden md:flex items-center">
-        <a href="#appointment" class="bg-brand-dark text-brand-sand text-xs font-semibold uppercase tracking-wider px-6 py-3 rounded-full hover:bg-brand-accent hover:text-white transition-all duration-300 shadow-sm">
+        <a href="#appointment" class="bg-gradient-to-r from-[#1da3c8] to-[#0284c7] hover:from-[#178ba9] hover:to-[#0369a1] text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-full transition-all duration-300 shadow-md shadow-cyan-500/20 hover:shadow-lg hover:shadow-cyan-500/30 transform hover:-translate-y-0.5">
           Book Appointment
         </a>
       </div>
 
       <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="md:hidden p-2 text-brand-dark focus:outline-none" aria-label="Toggle Navigation Menu">
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-[#0c2340] focus:outline-none" aria-label="Toggle Navigation Menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
@@ -115,14 +119,14 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-brand-beige border-b border-brand-almond px-6 py-4 space-y-3">
-      <a href="#home" class="block text-sm font-medium text-brand-muted hover:text-brand-accent py-1">Home</a>
-      <a href="#about" class="block text-sm font-medium text-brand-muted hover:text-brand-accent py-1">About Us</a>
-      <a href="#services" class="block text-sm font-medium text-brand-muted hover:text-brand-accent py-1">Services</a>
-      <a href="#doctors" class="block text-sm font-medium text-brand-muted hover:text-brand-accent py-1">Doctors</a>
-      <a href="#gallery" class="block text-sm font-medium text-brand-muted hover:text-brand-accent py-1">Gallery</a>
-      <a href="#contact" class="block text-sm font-medium text-brand-muted hover:text-brand-accent py-1">Contact</a>
-      <a href="#appointment" class="block w-full text-center bg-brand-dark text-brand-sand text-xs font-semibold uppercase tracking-wider py-3 rounded-full hover:bg-brand-accent transition-all duration-300">
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
+      <a href="#home" class="block text-sm font-semibold text-slate-700 hover:text-[#1da3c8] py-1.5">Home</a>
+      <a href="#about" class="block text-sm font-semibold text-slate-700 hover:text-[#1da3c8] py-1.5">About Us</a>
+      <a href="#services" class="block text-sm font-semibold text-slate-700 hover:text-[#1da3c8] py-1.5">Services</a>
+      <a href="#doctors" class="block text-sm font-semibold text-slate-700 hover:text-[#1da3c8] py-1.5">Doctors</a>
+      <a href="#gallery" class="block text-sm font-semibold text-slate-700 hover:text-[#1da3c8] py-1.5">Gallery</a>
+      <a href="#contact" class="block text-sm font-semibold text-slate-700 hover:text-[#1da3c8] py-1.5">Contact</a>
+      <a href="#appointment" class="block w-full text-center bg-[#1da3c8] text-white text-xs font-bold uppercase tracking-wider py-3.5 rounded-full shadow-md mt-2">
         Book Appointment
       </a>
     </div>
@@ -130,146 +134,183 @@
 
   <main class="flex-grow">
     
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-[#8b725c] min-h-[90vh] flex items-center overflow-hidden py-20 text-white">
-      <!-- Gradient overlay to blend image into the solid brand background color -->
-      <div class="absolute inset-0 bg-gradient-to-r from-[#8b725c] via-[#8b725c]/90 to-transparent z-10"></div>
-      
-      <!-- Hero Image Background -->
-      <div class="absolute inset-y-0 right-0 w-full md:w-1/2 h-full opacity-40 md:opacity-100 z-0">
-        <img src="/images/hero_south_indian.jpg" alt="Smiling patient showing healthy teeth" class="w-full h-full object-cover object-left md:object-center" fetchpriority="high">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#8b725c] via-transparent to-transparent md:bg-gradient-to-r md:from-[#8b725c] md:via-transparent"></div>
+    <!-- Hero Section (Full-Size Background Photo + Clinical Blue Overlay) -->
+    <section id="home" class="relative bg-[#07172b] min-h-[92vh] flex items-center overflow-hidden py-24 text-white">
+      <!-- Full size Background Photo -->
+      <div class="absolute inset-0 w-full h-full z-0">
+        <img src="/images/hero_doctor_blue.jpg" alt="South Indian Dentist Specialist Dental Hub Alappuzha" class="w-full h-full object-cover object-right md:object-center" fetchpriority="high">
+        <!-- Cinematic Deep Navy & Cyan Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#07172b] via-[#07172b]/90 to-[#07172b]/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#07172b] via-transparent to-transparent opacity-80"></div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-6 w-full relative z-20 grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div class="flex flex-col justify-center space-y-6 max-w-xl">
-          <span class="text-xs font-semibold tracking-widest text-brand-sand/90 uppercase">Redefining Clinical Care</span>
-          <h1 class="text-4xl md:text-5xl lg:text-6.5xl font-bold tracking-tight leading-tight text-white">
-            Exceptional Dental Care Designed Around You
+      <div class="max-w-7xl mx-auto px-6 w-full relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8 flex flex-col justify-center space-y-6 max-w-2xl">
+          
+          <!-- Category Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-300 text-xs font-bold tracking-widest uppercase backdrop-blur-md w-fit">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+            Leading Multi-Specialty Dental Care
+          </div>
+
+          <!-- Hero Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
+            Advanced Dental Care, <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-[#32bceb] to-sky-200">Crafted For Your Smile</span>
           </h1>
-          <p class="text-base md:text-lg text-brand-sand/80 leading-relaxed font-light">
-            Experience a higher standard of clinical dentistry where patient comfort meets state-of-the-art diagnostics. Led by our panel of certified MDS specialists, we deliver gentle, personalized treatments in Alappuzha.
+
+          <!-- Hero Description -->
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-light">
+            Experience a higher standard of clinical dentistry where patient comfort meets state-of-the-art diagnostics. Led by our panel of 7 certified MDS specialists, we deliver gentle, personalized dental treatments in Alappuzha.
           </p>
+
+          <!-- CTAs -->
           <div class="flex flex-wrap gap-4 pt-2">
-            <a href="#appointment" class="bg-brand-dark text-brand-sand text-xs font-semibold uppercase tracking-wider px-8 py-4 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 shadow-md">
+            <a href="#appointment" class="bg-gradient-to-r from-[#1da3c8] to-[#0284c7] hover:from-[#178ba9] hover:to-[#0369a1] text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-full transition-all duration-300 shadow-lg shadow-cyan-500/25 transform hover:-translate-y-0.5">
               Schedule Consultation
             </a>
-            <a href="#services" class="border border-white/30 text-white text-xs font-semibold uppercase tracking-wider px-8 py-4 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300">
+            <a href="#services" class="bg-white/10 hover:bg-white/20 border border-white/25 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-full transition-all duration-300">
               Explore Treatments
             </a>
           </div>
 
-          <!-- Quick Info Widget -->
-          <div class="grid grid-cols-2 gap-6 pt-8 border-t border-white/20">
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-white/10 rounded-full text-brand-sand">
+          <!-- Quick Info Widget in Frosted Glass -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 border-t border-slate-700/60 max-w-lg">
+            <div class="flex items-start gap-3.5">
+              <div class="p-2.5 bg-cyan-500/15 border border-cyan-400/30 rounded-xl text-cyan-300 backdrop-blur-sm">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               </div>
               <div>
-                <h4 class="text-xs font-semibold uppercase tracking-wider text-white">Address</h4>
-                <p class="text-xs text-brand-sand/80 mt-1 leading-relaxed">Pazhaveedu, Alappuzha</p>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200">Clinic Location</h4>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">Sathya Castle, Pazhaveedu, Alappuzha</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="p-2 bg-white/10 rounded-full text-brand-sand">
+            <div class="flex items-start gap-3.5">
+              <div class="p-2.5 bg-cyan-500/15 border border-cyan-400/30 rounded-xl text-cyan-300 backdrop-blur-sm">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               </div>
               <div>
-                <h4 class="text-xs font-semibold uppercase tracking-wider text-white">Opening Hours</h4>
-                <p class="text-xs text-brand-sand/80 mt-1 leading-relaxed">Mon - Sat: 10 AM to 5 PM</p>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-200">Working Hours</h4>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">Mon - Sat: 10:00 AM – 5:00 PM</p>
               </div>
             </div>
           </div>
+
         </div>
+
+        <!-- Floating Trust Badge for Desktop -->
+        <div class="hidden lg:col-span-4 lg:flex flex-col gap-4">
+          <div class="p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-2xl space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="p-2 rounded-lg bg-cyan-500 text-white font-black text-sm">7+</span>
+              <div>
+                <h3 class="text-sm font-bold text-white">Certified MDS Specialists</h3>
+                <p class="text-[11px] text-cyan-200">Full Spectrum Dental Care</p>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-light">
+              From Digital Smile Design to painless root canal treatments and titanium implants.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- Quick Navigation Links Bar -->
-    <div class="bg-white border-y border-brand-almond py-6">
-      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-brand-almond/50">
-        <a href="#appointment" class="flex flex-col items-center justify-center p-3 hover:text-brand-accent transition-colors">
-          <span class="text-xs uppercase tracking-wider font-semibold">Request Appointment</span>
+    <div class="bg-white border-y border-slate-200 py-6 shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+        <a href="#appointment" class="flex flex-col items-center justify-center p-3 hover:text-[#1da3c8] transition-colors group">
+          <span class="text-xs uppercase tracking-wider font-bold text-slate-700 group-hover:text-[#1da3c8]">Request Appointment</span>
         </a>
-        <a href="#contact" class="flex flex-col items-center justify-center p-3 pt-6 md:pt-3 hover:text-brand-accent transition-colors">
-          <span class="text-xs uppercase tracking-wider font-semibold">Get Second Opinion</span>
+        <a href="#contact" class="flex flex-col items-center justify-center p-3 pt-6 md:pt-3 hover:text-[#1da3c8] transition-colors group">
+          <span class="text-xs uppercase tracking-wider font-bold text-slate-700 group-hover:text-[#1da3c8]">Get Second Opinion</span>
         </a>
-        <a href="tel:+919497105261" class="flex flex-col items-center justify-center p-3 pt-6 md:pt-3 hover:text-brand-accent transition-colors">
-          <span class="text-xs uppercase tracking-wider font-semibold">Contact Customer Care</span>
+        <a href="tel:+919497105261" class="flex flex-col items-center justify-center p-3 pt-6 md:pt-3 hover:text-[#1da3c8] transition-colors group">
+          <span class="text-xs uppercase tracking-wider font-bold text-slate-700 group-hover:text-[#1da3c8]">Contact Customer Care</span>
         </a>
-        <a href="#contact" class="flex flex-col items-center justify-center p-3 pt-6 md:pt-3 hover:text-brand-accent transition-colors">
-          <span class="text-xs uppercase tracking-wider font-semibold">Our Locations</span>
+        <a href="#contact" class="flex flex-col items-center justify-center p-3 pt-6 md:pt-3 hover:text-[#1da3c8] transition-colors group">
+          <span class="text-xs uppercase tracking-wider font-bold text-slate-700 group-hover:text-[#1da3c8]">Our Locations</span>
         </a>
+      </div>
     </div>
 
     <!-- Moving Text Marquee Section -->
-    <div class="bg-brand-dark text-white overflow-hidden py-5 border-y border-white/10 select-none">
+    <div class="bg-[#07172b] text-white overflow-hidden py-5 border-y border-cyan-900/40 select-none">
       <div class="relative w-full flex overflow-x-hidden">
-        <div class="animate-marquee whitespace-nowrap flex gap-16 text-xs tracking-widest font-semibold uppercase">
-          <span>✦ Conservative Dentistry &amp; Endodontics</span>
-          <span>✦ Prosthodontics &amp; Implants</span>
-          <span>✦ Orthodontics &amp; Dento-facial Orthopedics</span>
-          <span>✦ Oral &amp; Maxillofacial Pathology</span>
-          <span>✦ Periodontics</span>
-          <span>✦ Pedodontics &amp; Preventive Dentistry</span>
-          <span>✦ Oral Medicine</span>
+        <div class="animate-marquee whitespace-nowrap flex gap-16 text-xs tracking-widest font-bold uppercase text-slate-300">
+          <span class="text-cyan-400">✦ Conservative Dentistry &amp; Endodontics</span>
+          <span>✦ Digital Smile Design</span>
+          <span class="text-cyan-400">✦ Prosthodontics &amp; Implants</span>
+          <span>✦ Orthodontics &amp; Aligners</span>
+          <span class="text-cyan-400">✦ Oral &amp; Maxillofacial Pathology</span>
+          <span>✦ Periodontics &amp; Gum Care</span>
+          <span class="text-cyan-400">✦ Pedodontics &amp; Preventive Care</span>
+          <span>✦ Oral Cancer Diagnostics</span>
           <!-- Duplicate for infinite marquee effect -->
-          <span>✦ Conservative Dentistry &amp; Endodontics</span>
-          <span>✦ Prosthodontics &amp; Implants</span>
-          <span>✦ Orthodontics &amp; Dento-facial Orthopedics</span>
-          <span>✦ Oral &amp; Maxillofacial Pathology</span>
-          <span>✦ Periodontics</span>
-          <span>✦ Pedodontics &amp; Preventive Dentistry</span>
-          <span>✦ Oral Medicine</span>
+          <span class="text-cyan-400">✦ Conservative Dentistry &amp; Endodontics</span>
+          <span>✦ Digital Smile Design</span>
+          <span class="text-cyan-400">✦ Prosthodontics &amp; Implants</span>
+          <span>✦ Orthodontics &amp; Aligners</span>
+          <span class="text-cyan-400">✦ Oral &amp; Maxillofacial Pathology</span>
+          <span>✦ Periodontics &amp; Gum Care</span>
+          <span class="text-cyan-400">✦ Pedodontics &amp; Preventive Care</span>
+          <span>✦ Oral Cancer Diagnostics</span>
         </div>
       </div>
     </div>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-brand-beige">
+    <section id="about" class="py-24 bg-[#f8fafc]">
       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         <!-- Text Content -->
         <div class="lg:col-span-7 space-y-6 reveal">
-          <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase">Welcome to Dental Hub</span>
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-dark">
+          <span class="text-xs font-bold tracking-widest text-[#1da3c8] uppercase">Welcome to Dental Hub</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#0c2340]">
             Building confidence through healthy, radiant smiles
           </h2>
-          <p class="text-brand-muted leading-relaxed font-light reveal reveal-delay-100">
-            We are a group of dedicated, highly skilled specialists representing all major clinical branches of dentistry. Our shared mission is to deliver comprehensive, customized, and ethically guided dental solutions for patients of all age groups.
+          <p class="text-slate-600 leading-relaxed font-light reveal reveal-delay-100">
+            We are a group of dedicated, highly skilled specialists representing all major clinical branches of dentistry. Our shared mission is to deliver comprehensive, customized, and ethically guided dental solutions for patients of all age groups in Alappuzha.
           </p>
           
           <div class="space-y-4 pt-4">
             <div class="flex items-start gap-4">
-              <span class="text-brand-accent text-lg font-medium">→</span>
-              <p class="text-brand-muted text-sm leading-relaxed">
-                <strong class="text-brand-dark font-medium">Personalized Care Path:</strong> We reject one-size-fits-all treatments. Every diagnosis is accompanied by a custom care plan tailored to your clinical timeline and comfort.
+              <span class="text-[#1da3c8] text-lg font-bold">→</span>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                <strong class="text-[#0c2340] font-semibold">Personalized Care Path:</strong> We reject one-size-fits-all treatments. Every diagnosis is accompanied by a custom care plan tailored to your clinical timeline and comfort.
               </p>
             </div>
             <div class="flex items-start gap-4">
-              <span class="text-brand-accent text-lg font-medium">→</span>
-              <p class="text-brand-muted text-sm leading-relaxed">
-                <strong class="text-brand-dark font-medium">Expert Clinical Team:</strong> From complex maxillofacial surgical cases to routine preventive maintenance, our team utilizes advanced diagnostic protocols.
+              <span class="text-[#1da3c8] text-lg font-bold">→</span>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                <strong class="text-[#0c2340] font-semibold">Expert Clinical Team:</strong> From complex maxillofacial surgical cases to routine preventive maintenance, our team utilizes advanced diagnostic protocols.
               </p>
             </div>
             <div class="flex items-start gap-4">
-              <span class="text-brand-accent text-lg font-medium">→</span>
-              <p class="text-brand-muted text-sm leading-relaxed">
-                <strong class="text-brand-dark font-medium">Patient Comfort First:</strong> We utilize modern, gentle treatment protocols to significantly minimize discomfort and dental anxiety.
+              <span class="text-[#1da3c8] text-lg font-bold">→</span>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                <strong class="text-[#0c2340] font-semibold">Patient Comfort First:</strong> We utilize modern, gentle treatment protocols to significantly minimize discomfort and dental anxiety.
               </p>
             </div>
           </div>
 
           <!-- Vision & Mission Mini Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-brand-almond reveal reveal-delay-200">
-            <div>
-              <h3 class="text-lg font-semibold text-brand-dark mb-2">Our Vision</h3>
-              <p class="text-xs text-brand-muted leading-relaxed">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-slate-200 reveal reveal-delay-200">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
+              <h3 class="text-base font-bold text-[#0c2340] mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#1da3c8]"></span>
+                Our Vision
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-light">
                 To transform lives by enhancing general well-being through optimal oral health, fostering lifelong healthy habits within our local community.
               </p>
             </div>
-            <div>
-              <h3 class="text-lg font-semibold text-brand-dark mb-2">Our Mission</h3>
-              <p class="text-xs text-brand-muted leading-relaxed font-light">
-                To provide compassionate, high-quality, and ethical dental treatments utilizing state-of-the-art technology, while continuously raising awareness regarding timely oral cancer diagnostic evaluations.
+            <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
+              <h3 class="text-base font-bold text-[#0c2340] mb-2 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#1da3c8]"></span>
+                Our Mission
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed font-light">
+                To provide compassionate, high-quality, and ethical dental treatments utilizing state-of-the-art technology, while raising awareness regarding timely oral cancer diagnostics.
               </p>
             </div>
           </div>
@@ -277,14 +318,15 @@
 
         <!-- Accompanying Image + Badges -->
         <div class="lg:col-span-5 relative reveal reveal-delay-300">
-          <div class="rounded-2xl overflow-hidden shadow-xl border border-brand-almond h-[600px]">
-            <img src="/images/image17.jpg" alt="Clinical excellence at Dental Hub Alappuzha" class="w-full h-full object-cover">
+          <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white h-[580px] bg-slate-200">
+            <img src="/images/hero_clinic_consult_blue.jpg" alt="Clinical consultation at Dental Hub Alappuzha" class="w-full h-full object-cover">
           </div>
           <!-- Floating badge representation -->
-          <div class="absolute -bottom-6 -left-6 bg-white border border-brand-almond p-4 rounded-xl shadow-lg max-w-[200px]">
-            <h4 class="text-xs font-bold text-brand-dark uppercase tracking-wider">Trusted Care</h4>
-            <p class="text-[10px] text-brand-muted mt-1 leading-normal">
-              State-of-the-art clinic infrastructure with fully equipped dental operation setups.
+          <div class="absolute -bottom-6 -left-6 bg-white border border-cyan-100 p-5 rounded-2xl shadow-xl max-w-[220px]">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-[#1da3c8] bg-cyan-50 px-2.5 py-1 rounded-full">Trusted Care</span>
+            <h4 class="text-xs font-bold text-[#0c2340] mt-2">State-of-the-Art Clinic</h4>
+            <p class="text-[11px] text-slate-500 mt-1 leading-normal font-light">
+              Fully equipped dental operatories and sterile diagnostic units.
             </p>
           </div>
         </div>
@@ -292,13 +334,13 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 bg-white border-t border-brand-almond">
+    <section id="services" class="py-24 bg-white border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto space-y-4 mb-16 reveal">
-          <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase">Our Specialties</span>
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-dark">Comprehensive Dental Services</h2>
-          <p class="text-brand-muted font-light">
-            We provide advanced dental therapies spanning all specializations to preserve and beautify your smile.
+          <span class="text-xs font-bold tracking-widest text-[#1da3c8] uppercase">Our Specialties</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#0c2340]">Comprehensive Dental Services</h2>
+          <p class="text-slate-600 font-light">
+            We provide advanced dental therapies spanning all major specializations to restore, preserve, and beautify your smile.
           </p>
         </div>
 
@@ -306,162 +348,162 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Card 1: General Dentistry -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col reveal">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col reveal">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image7.jpg" alt="General Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">General Dentistry</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Focused on preventive diagnostics, evaluations, and treatments for various conditions affecting the oral cavity, maintaining both the cosmetic appearance and natural function of your teeth.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">General Dentistry</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Focused on preventive diagnostics, evaluations, and treatments for various conditions affecting the oral cavity, maintaining both cosmetic appearance and function.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 2: Root Canal Treatment -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col reveal reveal-delay-100">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col reveal reveal-delay-100">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image1.jpg" alt="Root Canal Treatment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Root Canal Therapy</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Essential endodontic procedures designed to salvage inflamed or deeply decayed teeth. We carefully remove the infected pulp and seal the root canal structure to secure the tooth from extraction.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Root Canal Therapy</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Essential endodontic procedures designed to salvage inflamed or deeply decayed teeth. We carefully remove infected pulp and seal the root structure.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 3: Aesthetic Dentistry -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col reveal reveal-delay-200">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col reveal reveal-delay-200">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image10.jpg" alt="Aesthetic Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Aesthetic Dentistry</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Specialized treatments focused on facial aesthetics, teeth alignment, gum health, and smile contours. Improve your bite stability and achieve dental harmony designed to complement your overall facial structure.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Aesthetic Dentistry</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Specialized treatments focused on facial aesthetics, teeth alignment, gum health, and smile contours. Improve bite stability and achieve natural harmony.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 4: Oral & Maxillofacial Lesions -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image19.jpg" alt="Oral & Maxillofacial Lesions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Maxillofacial Pathology</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Expert surgical evaluation, staging, and treatment for structural anomalies, salivary gland issues, temporomandibular joint (TMJ) disorders, impacted wisdom teeth, and pathological lesions.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Maxillofacial Pathology</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Expert surgical evaluation, staging, and treatment for structural anomalies, salivary gland issues, TMJ disorders, and pathological lesions.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 5: Braces & Growth Modification -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image8.jpg" alt="Braces & Growth Modification" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Orthodontics & Growth Modification</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Guided developmental orthopedics to direct growth pattern corrections in jaws. Followed by modern braces or aligners that apply precise forces to shift permanent teeth into their aesthetic and functional positions.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Orthodontics &amp; Growth Modification</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Guided developmental orthopedics to direct jaw corrections, followed by modern braces or clear aligners to align teeth into ideal positions.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 6: Full Mouth Rehabilitation -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image13.jpg" alt="Full Mouth Rehabilitation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Full Mouth Rehabilitation</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  A personalized, multi-layered clinical treatment plan combining restorative dental treatments to reconstruct or strengthen the health, bite force, and aesthetics of your remaining dentition.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Full Mouth Rehabilitation</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  A personalized, multi-layered clinical treatment plan combining restorative treatments to rebuild bite force, structural health, and smile aesthetics.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 7: Crown & Bridge -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image2.jpg" alt="Crown & Bridge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Crowns & Fixed Bridges</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Long-lasting prosthetic restorations to reinforce a compromised tooth. Crowns entirely cap damaged teeth while bridges bridge the gaps left by missing dentition, cementing onto neighboring stable structures.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Crowns &amp; Fixed Bridges</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Long-lasting prosthetic restorations to reinforce damaged teeth and fill missing dental gaps, cemented firmly onto neighboring stable teeth or implants.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 8: Impacted Teeth Removal -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image14.jpg" alt="Impacted Teeth Removal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Impacted Teeth Extraction</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Surgical removal of deeply impacted teeth to prevent local bone resorption, soft tissue swelling, periodontitis, and misalignment in neighboring secondary molar structures.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Impacted Teeth Extraction</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Surgical removal of deeply impacted wisdom teeth to prevent swelling, bone loss, pain, and adjacent molar damage.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
           </div>
 
           <!-- Card 9: Implants -->
-          <div class="group bg-brand-beige border border-brand-almond/50 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col">
+          <div class="group bg-[#f8fafc] border border-slate-200/80 rounded-2xl overflow-hidden hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col">
             <div class="h-48 overflow-hidden relative">
               <img src="/images/image9.jpg" alt="Dental Implants" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             </div>
             <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
               <div>
-                <h3 class="text-lg font-bold text-brand-dark group-hover:text-brand-accent transition-colors">Dental Implants</h3>
-                <p class="text-xs text-brand-muted leading-relaxed mt-2 font-light">
-                  Permanent bio-compatible titanium post placement acting as artificial roots, topped with high-strength cosmetic crowns. A premium, comfortable alternative to loose dental bridge structures or removable dentures.
+                <h3 class="text-lg font-bold text-[#0c2340] group-hover:text-[#1da3c8] transition-colors">Dental Implants</h3>
+                <p class="text-xs text-slate-600 leading-relaxed mt-2 font-light">
+                  Permanent biocompatible titanium implants acting as real roots, crowned with aesthetic porcelain for natural feel and chewing strength.
                 </p>
               </div>
-              <a href="#appointment" class="text-xs font-semibold text-brand-dark uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+              <a href="#appointment" class="text-xs font-bold text-[#1da3c8] uppercase tracking-wider flex items-center gap-2 group-hover:translate-x-1 transition-transform">
                 Book Consultation <span>→</span>
               </a>
             </div>
@@ -469,15 +511,15 @@
 
         </div>
 
-        <!-- Non-grid highlight text for other clinical therapies -->
-        <div class="mt-12 p-8 bg-brand-beige/50 border border-brand-almond rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <!-- Non-grid highlight banner -->
+        <div class="mt-12 p-8 bg-gradient-to-r from-sky-50 to-cyan-50 border border-cyan-200/80 rounded-2xl flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-sm">
           <div class="space-y-2">
-            <h3 class="text-lg font-semibold text-brand-dark">Additional Specialized Treatments</h3>
-            <p class="text-xs text-brand-muted leading-relaxed font-light">
-              We also specialize in <strong class="text-brand-dark font-medium">Flap Surgery & painless gum therapies</strong> to treat advanced periodontitis, and conduct comprehensive screenings for the <strong class="text-brand-dark font-medium">Early Diagnosis of Oral Cancer</strong>.
+            <h3 class="text-lg font-bold text-[#0c2340]">Additional Specialized Treatments</h3>
+            <p class="text-xs text-slate-600 leading-relaxed font-light">
+              We also specialize in <strong class="text-[#0c2340] font-semibold">Flap Surgery &amp; painless gum therapies</strong> for periodontitis, as well as clinical screenings for the <strong class="text-[#0c2340] font-semibold">Early Diagnosis of Oral Cancer</strong>.
             </p>
           </div>
-          <a href="#appointment" class="bg-brand-dark text-brand-sand text-xs font-semibold uppercase tracking-wider px-6 py-3 rounded-full hover:bg-brand-accent hover:text-white transition-all duration-300 whitespace-nowrap shadow-sm">
+          <a href="#appointment" class="bg-[#0c2340] text-white hover:bg-[#1da3c8] text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-full transition-all duration-300 whitespace-nowrap shadow-md">
             Inquire Details
           </a>
         </div>
@@ -485,12 +527,12 @@
     </section>
 
     <!-- Doctors Section -->
-    <section id="doctors" class="py-24 bg-brand-beige border-t border-brand-almond">
+    <section id="doctors" class="py-24 bg-[#f8fafc] border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
-          <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase">Trusted Specialists</span>
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-dark">Meet Our Dental Specialists</h2>
-          <p class="text-brand-muted font-light">
+          <span class="text-xs font-bold tracking-widest text-[#1da3c8] uppercase">Trusted Specialists</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#0c2340]">Meet Our Dental Specialists</h2>
+          <p class="text-slate-600 font-light">
             Our clinic houses a highly experienced panel of certified MDS dental practitioners, dedicated to providing surgical and restorative solutions under clinical guidelines.
           </p>
         </div>
@@ -499,85 +541,85 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           
           <!-- Doctor 1 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image11.jpg" alt="Dr Anjaly D." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image11.jpg" alt="Dr Anjaly D." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Anjaly D.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
-              Oral & Maxillofacial Pathologist, with an advanced Fellowship in Digital Smile Design.
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Anjaly D.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
+              Oral &amp; Maxillofacial Pathologist, with an advanced Fellowship in Digital Smile Design.
             </p>
           </div>
 
           <!-- Doctor 2 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image3.jpg" alt="Dr Nidhin Kumar J." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image3.jpg" alt="Dr Nidhin Kumar J." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Nidhin Kumar J.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
-              Conservative Dentist & Endodontist specializing in advanced root canal restorations.
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Nidhin Kumar J.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
+              Conservative Dentist &amp; Endodontist specializing in advanced root canal restorations.
             </p>
           </div>
 
           <!-- Doctor 3 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image20.png" alt="Dr Reema Mary Thomas." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image20.png" alt="Dr Reema Mary Thomas." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Reema Mary Thomas.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
-              Consultant Orthodontist, offering corrective aligner and teeth positioning setups.
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Reema Mary Thomas.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
+              Consultant Orthodontist, offering corrective aligners and teeth positioning setups.
             </p>
           </div>
 
           <!-- Doctor 4 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image4.png" alt="Dr Balaji R Shenoi." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image4.png" alt="Dr Balaji R Shenoi." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Balaji R Shenoi.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
-              Oral & Maxillofacial Surgeon managing complicated extractions, trauma, and jaw surgeries.
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Balaji R Shenoi.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
+              Oral &amp; Maxillofacial Surgeon managing complicated extractions, trauma, and jaw surgeries.
             </p>
           </div>
 
           <!-- Doctor 5 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image16.png" alt="Dr Rinoo Roopak Soman." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image16.png" alt="Dr Rinoo Roopak Soman." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Rinoo Roopak Soman.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Rinoo Roopak Soman.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
               Consultant Periodontist specializing in painless gum surgery and bone graft restorations.
             </p>
           </div>
 
           <!-- Doctor 6 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image18.png" alt="Dr Sangeeta J Nair." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image18.png" alt="Dr Sangeeta J Nair." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Sangeeta J Nair.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
-              Prosthodontist & Implantologist focusing on aesthetic crown placements and full bridge implants.
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Sangeeta J Nair.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
+              Prosthodontist &amp; Implantologist focusing on aesthetic crown placements and full bridge implants.
             </p>
           </div>
 
           <!-- Doctor 7 -->
-          <div class="bg-white border border-brand-almond rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 text-center p-6 flex flex-col items-center">
-            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-brand-almond bg-brand-beige">
-              <img src="/images/image15.jpg" alt="Dr Sapna Chandran L." class="w-full h-full object-cover filter brightness-[1.03]">
+          <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden hover:shadow-xl hover:border-cyan-300 transition-all duration-300 text-center p-6 flex flex-col items-center">
+            <div class="w-36 h-36 rounded-full overflow-hidden mb-4 border-2 border-cyan-100 bg-sky-50 shadow-inner">
+              <img src="/images/image15.jpg" alt="Dr Sapna Chandran L." class="w-full h-full object-cover">
             </div>
-            <h3 class="text-base font-bold text-brand-dark">Dr Sapna Chandran L.</h3>
-            <span class="text-xs font-medium text-brand-accent uppercase tracking-wider mt-1">MDS</span>
-            <p class="text-xs text-brand-muted mt-3 leading-relaxed font-light">
+            <h3 class="text-base font-bold text-[#0c2340]">Dr Sapna Chandran L.</h3>
+            <span class="text-xs font-bold text-[#1da3c8] bg-cyan-50 border border-cyan-100 px-3 py-0.5 rounded-full uppercase tracking-wider mt-1.5">MDS</span>
+            <p class="text-xs text-slate-600 mt-3 leading-relaxed font-light">
               Consultant Oral Pathologist conducting diagnostic evaluations for pre-malignant lesions.
             </p>
           </div>
@@ -587,41 +629,41 @@
     </section>
 
     <!-- Appointment Booking Form -->
-    <section id="appointment" class="py-24 bg-white border-t border-brand-almond">
+    <section id="appointment" class="py-24 bg-white border-t border-slate-200">
       <div class="max-w-3xl mx-auto px-6">
         <div class="text-center space-y-4 mb-12">
-          <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase">Easy Scheduling</span>
-          <h2 class="text-3xl font-bold tracking-tight text-brand-dark">Book an Appointment</h2>
-          <p class="text-sm text-brand-muted font-light leading-relaxed">
-            Fill in your preferred date and selected clinical department. Our patient care representative will call you back shortly to coordinate your confirmation details.
+          <span class="text-xs font-bold tracking-widest text-[#1da3c8] uppercase">Easy Scheduling</span>
+          <h2 class="text-3xl font-extrabold tracking-tight text-[#0c2340]">Book an Appointment</h2>
+          <p class="text-sm text-slate-600 font-light leading-relaxed">
+            Fill in your preferred date and selected clinical department. Our patient care representative will call you back promptly to confirm your visit.
           </p>
         </div>
 
-        <form id="booking-form" class="space-y-6 bg-brand-beige p-8 md:p-12 rounded-2xl border border-brand-almond">
+        <form id="booking-form" class="space-y-6 bg-[#f8fafc] p-8 md:p-12 rounded-3xl border border-slate-200/80 shadow-md">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <!-- Patient Name -->
             <div class="flex flex-col space-y-2">
-              <label for="booking-name" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Your Full Name</label>
-              <input type="text" id="booking-name" required placeholder="Abhilash Nair" class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
+              <label for="booking-name" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Your Full Name</label>
+              <input type="text" id="booking-name" required placeholder="Abhilash Nair" class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
             </div>
 
             <!-- Phone Number -->
             <div class="flex flex-col space-y-2">
-              <label for="booking-phone" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Contact Number</label>
-              <input type="tel" id="booking-phone" required placeholder="+91 94971 05261" class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
+              <label for="booking-phone" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Contact Number</label>
+              <input type="tel" id="booking-phone" required placeholder="+91 94971 05261" class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
             </div>
 
             <!-- Patient Email -->
             <div class="flex flex-col space-y-2">
-              <label for="booking-email" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Email Address</label>
-              <input type="email" id="booking-email" required placeholder="abhilash.nair@gmail.com" class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
+              <label for="booking-email" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Email Address</label>
+              <input type="email" id="booking-email" required placeholder="abhilash.nair@gmail.com" class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
             </div>
 
             <!-- Gender Select -->
             <div class="flex flex-col space-y-2">
-              <label for="booking-gender" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Select Gender</label>
-              <select id="booking-gender" class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
+              <label for="booking-gender" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Select Gender</label>
+              <select id="booking-gender" class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
@@ -630,9 +672,9 @@
 
             <!-- Doctor Select -->
             <div class="flex flex-col space-y-2">
-              <label for="booking-doctor" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Select Specialist</label>
-              <select id="booking-doctor" class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
-                <option value="Dr Anjaly D. MDS">Dr Anjaly D. MDS (Pathology & Smile Design)</option>
+              <label for="booking-doctor" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Select Specialist</label>
+              <select id="booking-doctor" class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
+                <option value="Dr Anjaly D. MDS">Dr Anjaly D. MDS (Pathology &amp; Smile Design)</option>
                 <option value="Dr Nidhin Kumar J. MDS">Dr Nidhin Kumar J. MDS (Endodontist)</option>
                 <option value="Dr Reema Mary Thomas. MDS">Dr Reema Mary Thomas. MDS (Orthodontist)</option>
                 <option value="Dr Balaji R Shenoi. MDS">Dr Balaji R Shenoi. MDS (Oral Surgeon)</option>
@@ -644,28 +686,28 @@
 
             <!-- Department Select -->
             <div class="flex flex-col space-y-2">
-              <label for="booking-department" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Select Department</label>
-              <select id="booking-department" class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
-                <option value="Conservative Dentistry & Endodontics">Conservative Dentistry & Endodontics</option>
-                <option value="Prosthodontics & Implants">Prosthodontics & Implants</option>
-                <option value="Orthodontics & Dento-facial Orthopedics">Orthodontics & Dento-facial Orthopedics</option>
-                <option value="Oral & Maxillofacial Pathology">Oral & Maxillofacial Pathology</option>
+              <label for="booking-department" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Select Department</label>
+              <select id="booking-department" class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
+                <option value="Conservative Dentistry & Endodontics">Conservative Dentistry &amp; Endodontics</option>
+                <option value="Prosthodontics & Implants">Prosthodontics &amp; Implants</option>
+                <option value="Orthodontics & Dento-facial Orthopedics">Orthodontics &amp; Dento-facial Orthopedics</option>
+                <option value="Oral & Maxillofacial Pathology">Oral &amp; Maxillofacial Pathology</option>
                 <option value="Periodontics">Periodontics</option>
-                <option value="Pedodontics & Preventive Dentistry">Pedodontics & Preventive Dentistry</option>
+                <option value="Pedodontics & Preventive Dentistry">Pedodontics &amp; Preventive Dentistry</option>
                 <option value="Oral Medicine">Oral Medicine</option>
               </select>
             </div>
 
             <!-- Preferred Date -->
-            <div class="flex flex-col space-y-2">
-              <label for="booking-date" class="text-xs font-semibold text-brand-dark uppercase tracking-wider">Preferred Appointment Date</label>
-              <input type="date" id="booking-date" required class="bg-white border border-brand-almond px-4 py-3 rounded-lg text-sm focus:outline-none focus:border-brand-accent transition-colors">
+            <div class="flex flex-col space-y-2 md:col-span-2">
+              <label for="booking-date" class="text-xs font-bold text-[#0c2340] uppercase tracking-wider">Preferred Appointment Date</label>
+              <input type="date" id="booking-date" required class="bg-white border border-slate-300 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-[#1da3c8] focus:ring-2 focus:ring-cyan-100 transition-all">
             </div>
 
           </div>
 
           <div class="pt-4">
-            <button type="submit" class="w-full bg-brand-dark text-brand-sand text-xs font-bold uppercase tracking-wider py-4 rounded-lg hover:bg-brand-accent hover:text-white transition-all duration-300 shadow-md">
+            <button type="submit" class="w-full bg-gradient-to-r from-[#1da3c8] to-[#0284c7] hover:from-[#178ba9] hover:to-[#0369a1] text-white text-xs font-bold uppercase tracking-wider py-4 rounded-xl transition-all duration-300 shadow-md shadow-cyan-500/20 hover:shadow-lg hover:shadow-cyan-500/30">
               Submit Appointment Request
             </button>
           </div>
@@ -674,64 +716,64 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-24 bg-brand-beige border-t border-brand-almond">
+    <section id="gallery" class="py-24 bg-[#f8fafc] border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
-          <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase">Visual Tour</span>
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-brand-dark">Our Gallery</h2>
-          <p class="text-brand-muted font-light">
+          <span class="text-xs font-bold tracking-widest text-[#1da3c8] uppercase">Visual Tour</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#0c2340]">Our Clinic Gallery</h2>
+          <p class="text-slate-600 font-light">
             Take a visual tour of our modern clinical infrastructure, sanitized treatment units, and general patient care systems.
           </p>
         </div>
 
         <!-- Gallery Grid -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image7.jpg" alt="Sanitized Treatment Operatory" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Treatment Operatory</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Treatment Operatory</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image1.jpg" alt="Sterile Endodontic Equipment Setup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Endodontic Setup</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Endodontic Setup</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image10.jpg" alt="Aesthetic Dental Studio" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Aesthetic Consultation</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Aesthetic Consultation</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image8.jpg" alt="Orthodontics Care Room" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Orthodontic Facility</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Orthodontic Facility</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image19.jpg" alt="Maxillofacial Diagnostics Center" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Diagnostic Operations</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Diagnostic Operations</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image13.jpg" alt="Oral Rehabilitation consultation ward" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Rehabilitation Ward</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Rehabilitation Ward</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image2.jpg" alt="Restorative Dental Materials Setup" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Restorative Operatory</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Restorative Operatory</span>
             </div>
           </div>
-          <div class="rounded-xl overflow-hidden shadow-sm border border-brand-almond group relative">
+          <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 group relative">
             <img src="/images/image6.jpg" alt="Consultant Lounge & Reception Desk" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-            <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-              <span class="text-white text-xs font-medium">Front Desk Reception</span>
+            <div class="absolute inset-0 bg-[#07172b]/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+              <span class="text-white text-xs font-semibold">Front Desk Reception</span>
             </div>
           </div>
         </div>
@@ -739,17 +781,17 @@
     </section>
 
     <!-- Contact & Directions Section -->
-    <section id="contact" class="py-24 bg-white border-t border-brand-almond">
+    <section id="contact" class="py-24 bg-white border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           
           <!-- Contact details -->
           <div class="lg:col-span-5 space-y-8">
             <div class="space-y-4">
-              <span class="text-xs font-semibold tracking-widest text-brand-accent uppercase">Get in Touch</span>
-              <h2 class="text-3xl font-bold tracking-tight text-brand-dark">How Can We Help You?</h2>
-              <p class="text-brand-muted font-light leading-relaxed">
-                Connect with our front desk team for query coordination, billing details, or to book priority diagnostic visits.
+              <span class="text-xs font-bold tracking-widest text-[#1da3c8] uppercase">Get in Touch</span>
+              <h2 class="text-3xl font-extrabold tracking-tight text-[#0c2340]">How Can We Help You?</h2>
+              <p class="text-slate-600 font-light leading-relaxed">
+                Connect with our front desk team for query coordination, treatment estimations, or to book priority diagnostic visits.
               </p>
             </div>
 
@@ -757,12 +799,12 @@
               
               <!-- Address Details -->
               <div class="flex items-start gap-4">
-                <div class="p-3 bg-brand-beige border border-brand-almond rounded-xl text-brand-accent">
+                <div class="p-3 bg-sky-50 border border-cyan-100 rounded-2xl text-[#1da3c8]">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-brand-dark uppercase tracking-wider">Location Address</h4>
-                  <p class="text-xs text-brand-muted mt-1 leading-relaxed">
+                  <h4 class="text-sm font-bold text-[#0c2340] uppercase tracking-wider">Location Address</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
                     Building No:750/27, Sathya Castle,<br>Pazhaveedu P O, Alappuzha,<br>Kerala, 688009, India
                   </p>
                 </div>
@@ -770,12 +812,12 @@
 
               <!-- Phone Details -->
               <div class="flex items-start gap-4">
-                <div class="p-3 bg-brand-beige border border-brand-almond rounded-xl text-brand-accent">
+                <div class="p-3 bg-sky-50 border border-cyan-100 rounded-2xl text-[#1da3c8]">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-brand-dark uppercase tracking-wider">Emergency Contact</h4>
-                  <a href="tel:+919497105261" class="text-xs text-brand-accent font-semibold mt-1 block hover:underline">
+                  <h4 class="text-sm font-bold text-[#0c2340] uppercase tracking-wider">Emergency Helpline</h4>
+                  <a href="tel:+919497105261" class="text-xs text-[#1da3c8] font-bold mt-1 block hover:underline">
                     +91 94971 05261
                   </a>
                 </div>
@@ -783,14 +825,14 @@
 
               <!-- Email Details -->
               <div class="flex items-start gap-4">
-                <div class="p-3 bg-brand-beige border border-brand-almond rounded-xl text-brand-accent">
+                <div class="p-3 bg-sky-50 border border-cyan-100 rounded-2xl text-[#1da3c8]">
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-brand-dark uppercase tracking-wider">Electronic Mail</h4>
-                  <p class="text-xs text-brand-muted mt-1 leading-relaxed">
-                    <a href="mailto:fildineesoe@gmail.com" class="hover:underline">fildineesoe@gmail.com</a><br>
-                    <a href="mailto:myebstudios@gmail.com" class="hover:underline">myebstudios@gmail.com</a>
+                  <h4 class="text-sm font-bold text-[#0c2340] uppercase tracking-wider">Electronic Mail</h4>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                    <a href="mailto:fildineesoe@gmail.com" class="hover:underline text-slate-700">fildineesoe@gmail.com</a><br>
+                    <a href="mailto:myebstudios@gmail.com" class="hover:underline text-slate-700">myebstudios@gmail.com</a>
                   </p>
                 </div>
               </div>
@@ -799,11 +841,10 @@
           </div>
 
           <!-- Maps / Directions -->
-          <div class="lg:col-span-7 h-[400px] w-full rounded-2xl overflow-hidden border border-brand-almond shadow-md bg-brand-beige relative">
-            <!-- Emulate Interactive Map / Custom Stylized Static Map Background pointing to pazhaveedu -->
+          <div class="lg:col-span-7 h-[420px] w-full rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-slate-100 relative">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m4!2s0x3b0885c3b313efef%3A0xe5f922709ff62e3d!2sPazhaveedu%2C+Alappuzha%2C+Kerala+688009!5m2!1sde!2sde" 
-              class="w-full h-full border-0 grayscale-[25%] contrast-[1.05]" 
+              class="w-full h-full border-0 contrast-[1.02]" 
               allowfullscreen="" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade">
@@ -817,17 +858,17 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-brand-dark text-brand-sand pt-16 pb-8 border-t border-brand-accent/20">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-brand-sand/10 pb-16">
+  <footer class="bg-[#07172b] text-slate-300 pt-16 pb-8 border-t border-cyan-900/40">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-slate-800 pb-16">
       
       <!-- Logo/Brand Widget -->
       <div class="md:col-span-4 space-y-4">
         <div class="flex items-center gap-3">
-          <img src="/images/image5.png" alt="Dental Hub Logo" class="h-10 w-auto object-contain brightness-110 contrast-125 filter invert">
-          <span class="text-xl font-bold tracking-tight text-white">Dental Hub</span>
+          <img src="/images/image5.png" alt="Dental Hub Logo" class="h-10 w-auto object-contain brightness-125">
+          <span class="text-xl font-extrabold tracking-tight text-white">Dental Hub</span>
         </div>
-        <p class="text-xs text-brand-sand/70 leading-relaxed font-light">
-          Leading the way in clinical excellence and ethical dental care in Alappuzha. We offer complete patient rehabilitation with fully modernized operatory setups.
+        <p class="text-xs text-slate-400 leading-relaxed font-light">
+          Leading the way in clinical excellence and ethical dental care in Alappuzha. We offer complete patient rehabilitation with modernized operatory setups.
         </p>
       </div>
 
@@ -835,18 +876,18 @@
       <div class="md:col-span-3 space-y-4">
         <h4 class="text-xs font-bold text-white uppercase tracking-widest">Important Links</h4>
         <nav class="flex flex-col space-y-2 text-xs">
-          <a href="#appointment" class="text-brand-sand/70 hover:text-white transition-colors">Book Appointment</a>
-          <a href="#about" class="text-brand-sand/70 hover:text-white transition-colors">About Our Clinic</a>
-          <a href="#services" class="text-brand-sand/70 hover:text-white transition-colors">Clinical Services</a>
-          <a href="#doctors" class="text-brand-sand/70 hover:text-white transition-colors">Specialist Panels</a>
-          <a href="#gallery" class="text-brand-sand/70 hover:text-white transition-colors">Clinic Gallery</a>
+          <a href="#appointment" class="text-slate-400 hover:text-cyan-400 transition-colors">Book Appointment</a>
+          <a href="#about" class="text-slate-400 hover:text-cyan-400 transition-colors">About Our Clinic</a>
+          <a href="#services" class="text-slate-400 hover:text-cyan-400 transition-colors">Clinical Services</a>
+          <a href="#doctors" class="text-slate-400 hover:text-cyan-400 transition-colors">Specialist Panels</a>
+          <a href="#gallery" class="text-slate-400 hover:text-cyan-400 transition-colors">Clinic Gallery</a>
         </nav>
       </div>
 
       <!-- Contact Info Column -->
       <div class="md:col-span-5 space-y-4">
         <h4 class="text-xs font-bold text-white uppercase tracking-widest">Office Address</h4>
-        <p class="text-xs text-brand-sand/70 leading-relaxed font-light">
+        <p class="text-xs text-slate-400 leading-relaxed font-light">
           Sathya Castle, Pazhaveedu P O, Alappuzha, Kerala - 688009, India<br>
           <span class="block mt-2"><strong class="text-white font-medium">Telephone:</strong> +91 94971 05261</span>
           <span class="block"><strong class="text-white font-medium">Email:</strong> fildineesoe@gmail.com</span>
@@ -857,12 +898,12 @@
 
     <!-- Copyright and Credentials -->
     <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-[10px] text-brand-sand/50 tracking-wider">
+      <p class="text-[11px] text-slate-500 tracking-wider">
         &copy; 2026 Dental Hub. All Rights Reserved. Designed for local SEO alignment.
       </p>
-      <div class="flex gap-6 text-[10px] text-brand-sand/50">
-        <a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-        <a href="/terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+      <div class="flex gap-6 text-[11px] text-slate-500">
+        <a href="/privacy.html" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+        <a href="/terms.html" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
       </div>
     </div>
   </footer>
