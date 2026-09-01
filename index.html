@@ -333,6 +333,67 @@
       </div>
     </section>
 
+    <!-- Interactive Screen-Filling Scroll Expansion Section -->
+    <section id="experience-showcase" class="relative h-[180vh] bg-[#07172b] select-none">
+      <!-- Sticky Full-Screen Viewport Frame -->
+      <div class="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
+        
+        <!-- Animated Expanding Image & Text Card -->
+        <div id="scroll-expand-card" class="relative overflow-hidden flex items-center justify-center shadow-2xl border border-cyan-400/30" style="width: 88%; max-width: 80rem; height: 65vh; border-radius: 28px;">
+          
+          <!-- Background Image that subtle parallax scales -->
+          <img id="scroll-expand-img" src="/images/fullscreen_scroll_showcase.jpg" alt="Futuristic State-of-the-Art Dental Studio Operatory" class="absolute inset-0 w-full h-full object-cover transition-transform duration-75 ease-out" style="transform: scale(1.15);">
+          
+          <!-- Dynamic Dark/Cyan Overlay -->
+          <div id="scroll-expand-overlay" class="absolute inset-0 bg-gradient-to-t from-[#07172b] via-[#07172b]/80 to-[#07172b]/50 transition-opacity duration-75 ease-out" style="opacity: 0.6;"></div>
+
+          <!-- Centered High-Impact Text Content -->
+          <div id="scroll-expand-content" class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white space-y-6 transition-transform duration-75 ease-out">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 text-xs font-extrabold tracking-widest uppercase backdrop-blur-md">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              State-Of-The-Art Clinical Architecture
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white drop-shadow-lg">
+              Where Cutting-Edge Technology <br class="hidden sm:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-[#32bceb] to-sky-200">Meets Gentle Care</span>
+            </h2>
+
+            <p class="text-sm sm:text-base md:text-lg text-slate-200 max-w-2xl mx-auto font-light leading-relaxed drop-shadow">
+              Step into Alappuzha's premier dental operatory. Engineered with sanitized air systems, ultra-quiet precision instruments, and 3D digital smile design for zero-stress treatments.
+            </p>
+
+            <!-- Feature Pills Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 max-w-3xl mx-auto text-left">
+              <div class="p-3.5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
+                <span class="text-cyan-300 font-bold text-xs block">01 / HYGIENE</span>
+                <span class="text-white font-semibold text-xs mt-0.5 block">100% Sterile Units</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
+                <span class="text-cyan-300 font-bold text-xs block">02 / COMFORT</span>
+                <span class="text-white font-semibold text-xs mt-0.5 block">Painless Protocols</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
+                <span class="text-cyan-300 font-bold text-xs block">03 / PRECISION</span>
+                <span class="text-white font-semibold text-xs mt-0.5 block">Digital 3D Scans</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md">
+                <span class="text-cyan-300 font-bold text-xs block">04 / MASTERY</span>
+                <span class="text-white font-semibold text-xs mt-0.5 block">7+ MDS Specialists</span>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="#appointment" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#1da3c8] to-[#0284c7] hover:from-[#178ba9] hover:to-[#0369a1] text-white text-xs font-bold uppercase tracking-wider px-8 py-4 rounded-full transition-all duration-300 shadow-xl shadow-cyan-500/30 transform hover:-translate-y-0.5">
+                <span>Experience Dental Hub</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="py-24 bg-white border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-6">

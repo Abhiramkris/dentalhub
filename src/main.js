@@ -122,4 +122,51 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
+
+  // Screen-Filling Scroll Expansion Section
+  const expandSection = document.getElementById('experience-showcase');
+  const expandCard = document.getElementById('scroll-expand-card');
+  const expandImg = document.getElementById('scroll-expand-img');
+  const expandOverlay = document.getElementById('scroll-expand-overlay');
+  const expandContent = document.getElementById('scroll-expand-content');
+
+  if (expandSection && expandCard) {
+    const handleScrollExpand = () => {
+      const rect = expandSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const totalScrollDistance = rect.height - windowHeight;
+      
+      if (totalScrollDistance <= 0) return;
+
+      // Progress from 0 (when top hits top of viewport) to 1 (when scrolled through)
+      const currentScroll = -rect.top;
+      const progress = Math.min(Math.max(currentScroll / totalScrollDistance, 0), 1);
+
+      // Interpolate width (88% -> 100%), height (65vh -> 100vh), border-radius (28px -> 0px)
+      const width = 88 + (progress * 12);
+      const height = 65 + (progress * 35);
+      const radius = 28 * (1 - progress);
+      const imgScale = 1.15 - (progress * 0.15);
+      const textTranslateY = (1 - progress) * 15;
+
+      expandCard.style.width = `${width}%`;
+      expandCard.style.maxWidth = progress > 0.92 ? '100vw' : '80rem';
+      expandCard.style.height = `${height}vh`;
+      expandCard.style.borderRadius = `${radius}px`;
+      
+      if (expandImg) {
+        expandImg.style.transform = `scale(${imgScale})`;
+      }
+      if (expandOverlay) {
+        expandOverlay.style.opacity = `${0.5 + (progress * 0.3)}`;
+      }
+      if (expandContent) {
+        expandContent.style.transform = `translateY(${textTranslateY}px)`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScrollExpand, { passive: true });
+    window.addEventListener('resize', handleScrollExpand);
+    handleScrollExpand();
+  }
 });
