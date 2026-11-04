@@ -169,4 +169,56 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', handleScrollExpand);
     handleScrollExpand();
   }
+
+  // Google Reviews Carousel Controller
+  const reviewsCarousel = document.getElementById('reviews-carousel');
+  const reviewPrevBtn = document.getElementById('review-prev-btn');
+  const reviewNextBtn = document.getElementById('review-next-btn');
+  const reviewDots = document.getElementById('review-dots');
+
+  if (reviewsCarousel && reviewPrevBtn && reviewNextBtn) {
+    const getScrollAmount = () => {
+      const card = reviewsCarousel.querySelector('div');
+      return card ? card.offsetWidth + 24 : 360;
+    };
+
+    reviewPrevBtn.addEventListener('click', () => {
+      reviewsCarousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+
+    reviewNextBtn.addEventListener('click', () => {
+      reviewsCarousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+
+    // Update dot indicator on scroll
+    if (reviewDots) {
+      const dots = reviewDots.querySelectorAll('button');
+      reviewsCarousel.addEventListener('scroll', () => {
+        const scrollLeft = reviewsCarousel.scrollLeft;
+        const maxScroll = reviewsCarousel.scrollWidth - reviewsCarousel.clientWidth;
+        if (maxScroll <= 0) return;
+        const activeIndex = Math.min(
+          dots.length - 1,
+          Math.round((scrollLeft / maxScroll) * (dots.length - 1))
+        );
+
+        dots.forEach((dot, idx) => {
+          if (idx === activeIndex) {
+            dot.className = 'w-7 h-2 rounded-full bg-[#1da3c8] transition-all';
+          } else {
+            dot.className = 'w-2 h-2 rounded-full bg-slate-300 hover:bg-slate-400 transition-all';
+          }
+        });
+      }, { passive: true });
+
+      dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          const maxScroll = reviewsCarousel.scrollWidth - reviewsCarousel.clientWidth;
+          const target = (maxScroll / (dots.length - 1)) * idx;
+          reviewsCarousel.scrollTo({ left: target, behavior: 'smooth' });
+        });
+      });
+    }
+  }
 });
+
